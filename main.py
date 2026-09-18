@@ -94,7 +94,7 @@ Provide the score breakdown in JSON format at the end starting with "Score JSON:
 """
 
                 response = groq_client.chat.completions.create(
-                    model="llama-3.1-8b-instant",
+                    model="openai/gpt-oss-120b",
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=700
                 )
